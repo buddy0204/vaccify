@@ -1,0 +1,98 @@
+.content {
+    margin: 70px 50px; /* Adjusts margin to apply on all sides */
+    padding: 20px;
+    text-align: justify; /* Aligns the text for better readability */
+    max-width: 800px; /* Sets a max width to prevent lines from being too long on wide screens */
+    margin-left: auto; /* Centers the content block horizontally */
+    margin-right: auto;
+    background-color: #f9f9f9; /* Optional: adds a subtle background color */
+    border-radius: 10px; /* Optional: rounds the corners of the content block */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Adjust the text color for better readability */
+}
+.top-left-image {
+  height: 40px;
+  margin-left: 20px;
+  margin-right: -10px;
+}
+
+h1 {
+    text-align: center; /* Centers the heading */
+    /* margin: 20px 0; Adjusts the margin around the heading for tighter spacing */
+    margin-top: 70px;
+}
+
+.nav {
+  overflow: hidden;
+  display: flex;
+  padding: 10px 8px;
+}
+
+.logo_heading {
+  margin-bottom: -5px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  gap: 25px;
+  margin-top: 10px;
+  color: black;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+}
+
+.language_icon {
+  margin-left: 820px;
+  margin-top: -10px;
+}
+
+.button-background {
+  width: 100px;
+  height: 40px;
+  background: #5242d8;
+  border-radius: 10px;
+  border: 1px #5242d8 solid;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 875px;
+  margin-top: -10px;
+}
+
+.signin-button {
+  width: 80px;
+  color: white;
+  font-size: 20px;
+  font-family: serif;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -10px;
+}

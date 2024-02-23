@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #5242d8;
+}
+
+.content-container {
+  /* width: 525px; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Added for rounded corners */
+  
+}
+
+.signup-header,
+p {
+  color: #333; /* Darker text for better readability */
+  
+}
+
+h2 {
+  color: #5242d8;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px); /* Adjust width for padding */
+  padding: 15px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #6255d1; /* Change the background color on hover */
+}
+
+.btn {
+  background-color: #5242d8;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%; /* Increased width */
+  border-radius: 20px;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.alternative-signin {
+  width: 471px;
+  height: 29px;
+  margin-top: 20px; /* Adjust this value as needed for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alternative-text {
+  color: #a8a3a3;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.line {
+  width: 144px;
+  height: 1px;
+  background: #a8a3a3;
+}
+
+.password-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle i {
+  position: absolute;
+  right: 20px; /* Adjusted for correct alignment */
+  cursor: pointer;
+}
+
+/* New Styles for Background Boxes */
+.input-background {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  padding: 15px 15px 15px 15px;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+a img {
+  /* existing styles */
+  border-radius: 80%; /* Make the image circular */
+  width: 50px; /* Adjust the size of the circle */
+  height: 50px; /* Adjust the size of the circle */
+  margin-top: 10px; /* Adjust the vertical position of the circle */
+}
+
+/* Terms and Conditions link */
+a {
+  color: #5242d8;
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

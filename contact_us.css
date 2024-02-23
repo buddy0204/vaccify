@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-left-image {
+  height: 40px;
+  margin-left: 20px;
+  margin-right: -10px;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-left: 50px;
+  font-size: 50px;
+}
+
+.nav {
+  overflow: hidden;
+  display: flex;
+  padding: 10px 8px;
+}
+
+.logo_heading {
+  margin-bottom: -5px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  gap: 25px;
+  margin-top: 10px;
+  color: black;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+}
+
+.language_icon {
+  margin-left: 820px;
+  margin-top: -10px;
+}
+
+.button-background {
+  width: 100px;
+  height: 40px;
+  background: #5242d8;
+  border-radius: 10px;
+  border: 1px #5242d8 solid;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 875px;
+  margin-top: -10px;
+}
+
+.signin-button {
+  width: 80px;
+  color: white;
+  font-size: 20px;
+  font-family: serif;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+.mainimage {
+  float: right;
+  margin-top: 100px;
+  margin-right: 250px;
+}
+
+.user-input-section {
+  display: flex;
+  align-items: center;
+  margin-left: 50px; /* Adjust based on layout */
+  margin-top: 20px; /* Adjust based on layout */
+}
+
+.user-icon {
+  height: 24px; /* Adjust based on your preference */
+  margin-right: 10px;
+}
+
+#userName {
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  width: 300px;
+}
+
+#email {
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  width: 300px;
+}
+
+.email-input-section {
+  display: flex;
+  align-items: center;
+  margin-left: 50px; /* Adjust based on layout */
+  margin-top: 40px; /* Adjust based on layout */
+}
+
+.message-input-section {
+  display: flex;
+  align-items: center;
+  margin-left: 50px; /* Adjust based on layout */
+  margin-top: 40px; /* Adjust based on layout */
+}
+
+#message {
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+  width: 335px; /* Match other inputs or adjust as necessary */
+  resize: none; /* Prevent manual resizing */
+  overflow: hidden; /* Keep the overflow hidden */
+}
+
+.submit-button-section {
+  margin-left: 50px; /* Align with the rest of the form */
+  margin-top: 30px; /* Spacing from the message input */
+}
+
+#sendMessageButton {
+  padding: 10px 20px;
+  width: 360px;
+  font-size: 16px;
+  font-family: Arial, sans-serif; /* Match the font of your form */
+  background-color: #5242d8; /* Primary color for the button */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+  outline: none; /* Removes the outline to keep the design clean */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#sendMessageButton:hover {
+  background-color: #4131b4; /* Slightly darker shade on hover */
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

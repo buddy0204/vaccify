@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        p, li {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .info-box {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .info-box:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .accordion {
+            background-color: #f4f4f4;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ddd;
+        }
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2212";
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .panel ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+        .panel p:last-child {
+            margin-bottom: 0;
+        }
+        .panel li {
+            margin-bottom: 5px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Terms and Conditions</h1>
+    <p>Last updated: 10-02-2024</p>
+
+    <div class="info-box">
+        <button class="accordion">1. Introduction</button>
+        <div class="panel">
+            <p>Welcome to our Terms and Conditions page. These terms and conditions outline the rules and regulations for the use of vaccify's Website.</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <button class="accordion">2. Intellectual Property Rights</button>
+        <div class="panel">
+            <p>Other than the content you own, under these Terms, Vaccify and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <button class="accordion">3. Restrictions</button>
+        <div class="panel">
+            <p>You are specifically restricted from all of the following:</p>
+            <ul>
+                <li>publishing any Website material in any other media;</li>
+                <li>selling, sublicensing, and/or otherwise commercializing any Website material;</li>
+                <li>publicly performing and/or showing any Website material;</li>
+                <li>using this Website in any way that is or may be damaging to this Website;</li>
+                <li>using this Website in any way that impacts user access to this Website;</li>
+                <li>using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;</li>
+                <li>engaging in any data mining, data harvesting, data extracting, or any other similar activity in relation to this Website;</li>
+                <li>using this Website to engage in any advertising or marketing.</li>
+            </ul>
+            <p>Certain areas of this Website are restricted from being accessed by you, and [Your Company Name] may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential, and you must maintain confidentiality as well.</p>
+        </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+    <a class="button" href="#">I Agree to the Terms and Conditions</a>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

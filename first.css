@@ -1,0 +1,168 @@
+.main-container {
+    height: 97vh;
+    background: #5242D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -90;
+    overflow: scroll hidden;
+}
+
+.content-container {
+    width: 525px; /* Reduced from 644px */
+    height: 80vh; /* Increased from 66vh */
+    display: flex;
+    background: white;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.heading {
+    width: 396px;
+    color: #5242D8;
+    font-size: 48px;
+    font-family: Inter;
+    font-weight: 600;
+    text-align: center; /* Center the text */
+    margin-bottom: 15px;
+}
+
+.subheading {
+    width: 100%; /* Use 100% width to center the text */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some space above the subheading */
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+    margin-bottom:30px;
+}
+
+.google-signin {
+    width: 350px; /* Reduced width */
+    height: 60px; /* Reduced height */
+    border-radius: 30px; /* Adjusted for aesthetics */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-button-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px #A8A3A3 solid;
+    border-radius: 30px; /* Adjusted to match the button size */
+}
+
+.email-signin {
+    width: 471px;
+    height: 59px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed for spacing */
+    background: #5242D8;
+    border: 1px #5242D8 solid;
+    margin-bottom: 20px;
+}
+
+
+.button-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.google-button-background {
+    background: white;
+    border: 1px #A8A3A3 solid;
+    border-radius: 39.5px;
+}
+
+.button-text {
+    color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.google-text {
+    color: black;
+    font-size: 18px; /* Slightly reduced font size */
+    font-family: Inter;
+    font-weight: 400;
+}
+
+
+.google-icon {
+    width: 40px; /* Slightly reduced size */
+    height: 35px; /* Slightly reduced size */
+    margin-right: 10px;
+}
+
+.decorative-line {
+    width: 103px;
+    height: 3px; /* Adjusted to make it visible as a line */
+    background-color: #5242D8; /* Set a background color */
+    margin-top: 15px; /* Add some space above the line */
+    margin-bottom: 15px; /* Add some space below the line */
+}
+
+.signup-text {
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Center aligns the text */
+    margin-top: 20px; /* Adjust as needed for spacing */
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.normal-text {
+    color: #A8A3A3;
+}
+
+.highlight-text {
+    color: #5242D8;
+    cursor: pointer;
+}
+
+.alternative-signin {
+    width: 471px;
+    height: 29px;
+    margin-top: 20px; /* Adjust this value as needed for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.alternative-text {
+    color: #A8A3A3;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.line {
+    width: 144px;
+    height: 1px;
+    background: #A8A3A3;
+}
+
+

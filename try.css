@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#overlay {
+    position: fixed; /* Stay in place */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Sit on top */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%; /* Could be more or less, depending on screen size */
+    cursor: default;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1; /* Ensure it's below the overlay */
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}

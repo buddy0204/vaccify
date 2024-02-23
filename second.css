@@ -1,0 +1,210 @@
+.main-container {
+  height: 100vh;
+  background: #5242d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -90;
+  overflow: scroll hidden;
+}
+
+.inner-container {
+  width: 525px;
+  height: 80vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 0;
+  justify-content: flex-start;
+}
+
+.signin-text {
+  width: 100%;
+  height: 32px;
+  color: black;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+}
+
+.welcome-text {
+  width: 100%;
+  color: #5242d8;
+  font-size: 32px;
+  font-family: serif;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.input-field {
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.input-field.password {
+  margin-top: 40px; /* Increase this value from 10px to 30px or as needed */
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.input-background {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 90%;
+  height: 56px;
+  background: white;
+  border-radius: 39.5px;
+  border: 1px #a8a3a3 solid;
+  z-index: 1;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.input-label {
+  width: auto;
+  height: 32px;
+  z-index: 2;
+  color: black;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.input-placeholder {
+  width: calc(100%-60px);
+  height: 56px;
+  position: relative;
+  z-index: 2;
+  color: #a8a3a3;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left: 30px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.terms-text .terms-link {
+  color: #5242d8;
+}
+
+.visibility-icon {
+  position: absolute;
+  right: 60px; /* Adjust this value as needed to position the icon inside the input */
+  top: 50%; /* Centers the icon vertically */
+  transform: translateY(
+    -50%
+  ); /* Ensures the icon is centered regardless of its size */
+  width: 20px;
+  height: 20px;
+  cursor: poserif;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.signin-button {
+  width: 402px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.button-background {
+  width: 200px;
+  height: 60px;
+  background: #5242d8;
+  border-radius: 14px;
+  border: 1px #5242d8 solid;
+  position: absolute;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.button-text {
+  width: 89px;
+  height: 23px;
+  color: white;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  margin-top: 60px;
+}
+
+.signup-text {
+  width: 313px;
+  height: 29px;
+  color: #a8a3a3;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-top: 40px;
+}
+
+.signup-text .signup-link {
+  color: #5242d8;
+  margin-top: 40px;
+}
+
+.alternative-signin {
+  width: 471px;
+  height: 29px;
+  margin-top: 20px; /* Adjust this value as needed for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alternative-text {
+  color: #a8a3a3;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 500;
+  margin: 0 10px;
+  margin-top: 70px;
+}
+
+.line {
+  width: 144px;
+  height: 1px;
+  background: #a8a3a3;
+  margin-top: 70px;
+}
+
+.google-icon-container {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-background {
+  background: white;
+  /* border: 1px #A8A3A3 solid; */
+  border-radius: 39.5px;
+  margin-top: 40px;
+}
+
+.google-icon {
+  width: 52px;
+  height: 45px;
+}

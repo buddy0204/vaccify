@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaccify</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <script>
+      // Object containing the text for both languages
+      const texts = {
+        english: {
+          navHome: "Home",
+          navAbout: "About",
+          navContactUs: "Contact Us",
+          signInButton: "Sign in",
+          mainHeading: "Empowering Health with Vaccine Tracker",
+          mainParagraph:
+            "Elevate your vaccination experience with the Vaccine Record Keeping System. Seamless vaccination experience, digital certificates, virtual appointments, and personalized reminders in one user-friendly platform.",
+          readMoreBtn: "Read More",
+          extraContent:
+            "Here's more detailed information about how Vaccify is changing the future of health and wellness through innovative technology and patient-centric services. From tracking vaccination history to scheduling future appointments, Vaccify is your go-to platform for managing your health records.",
+        },
+        french: {
+          navHome: "Accueil",
+          navAbout: "À propos",
+          navContactUs: "Contactez-nous",
+          signInButton: "Se connecter",
+          mainHeading: "Renforcement de la santé avec le suivi des vaccins",
+          mainParagraph:
+            "Élevez votre expérience de vaccination avec le système de tenue de dossiers de vaccination. Expérience de vaccination transparente, certificats numériques, rendez-vous virtuels et rappels personnalisés sur une plateforme conviviale.",
+          readMoreBtn: "Lire la suite",
+          extraContent:
+            "Voici des informations plus détaillées sur la manière dont Vaccify change l'avenir de la santé et du bien-être grâce à une technologie innovante et des services centrés sur le patient. De la traçabilité de l'historique de vaccination à la planification des prochains rendez-vous, Vaccify est votre plateforme privilégiée pour gérer vos dossiers de santé.",
+        },
+      };
+
+      // Current language state
+      let currentLanguage = "english";
+
+      // Function to change language
+      function changeLanguage() {
+        currentLanguage = currentLanguage === "english" ? "french" : "english";
+        for (const id in texts[currentLanguage]) {
+          document.getElementById(id).innerText = texts[currentLanguage][id];
+        }
+      }
+
+      // Add click event listener to the language icon
+      document
+        .getElementById("languageIcon")
+        .addEventListener("click", changeLanguage);
+    </script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-left">
+        <img class="top-left-image" src="logo_bg.png" alt="logo" />
+        <h2 class="logo_heading"><b>Vaccify</b></h2>
+      </div>
+      <div class="nav-right">
+        <a href="home.html" id="navHome">Home</a>
+        <a href="about_us.html" id="navAbout">About Us</a>
+        <a href="contact_us.html" id="navContactUs">Contact Us</a>
+        <!-- <a class="signin-button" href="signin.html" id="signInButton">Sign in</a> -->
+        <!-- Assuming you've already added an ID to the language icon -->
+
+        <div class="signin">
+          <img
+            class="language_icon"
+            src="language_icon.png"
+            alt="globe"
+            id="languageIcon"
+            onclick="changeLanguage();"
+          />
+          <div class="button-background"></div>
+          <a class="signin-button" href="signin.html" id="signInButton"
+            >Sign in</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <img class="mainimage" src="home page illus.png" alt="Vaaccify" />
+
+    <div class="content">
+      <h1 id="mainHeading">
+        Empowering Health with <br />
+        Vaccine Tracker
+      </h1>
+      <p id="mainParagraph">
+        Elevate your vaccination experience with the Vaccine Record Keeping
+        System. Seamless vaccination experience, digital certificates, virtual
+        appointments, and personalized reminders in one user-friendly platform.
+      </p>
+      <button id="readMoreBtn">Read More</button>
+      <!-- Read More Button -->
+      <p id="extraContent" style="display: none">
+        Here's more detailed information about how Vaccify is changing the
+        future of health and wellness through innovative technology and
+        patient-centric services. From tracking vaccination history to
+        scheduling future appointments, Vaccify is your go-to platform for
+        managing your health records.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

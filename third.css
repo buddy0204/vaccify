@@ -1,0 +1,159 @@
+.main-container {
+    height: 100vh;
+    background: #5242D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -90;
+    overflow: hidden;
+}
+
+.inner-container {
+    width: 525px;
+    height: auto; /* Adjusted to auto to accommodate variable content height */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: added shadow for depth */
+}
+
+.signin-text, .signup-text {
+    width: 100%;
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted margin for spacing */
+}
+
+.welcome-text {
+    width: 100%;
+    color: #5242D8;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px; /* Adjusted margin for spacing */
+}
+
+.input-field {
+    width: 90%; /* Adjusted width for consistent padding */
+    margin: 10px auto; /* Centered field and added vertical margin */
+    position: relative;
+}
+
+.input-background {
+    width: 100%;
+    height: 56px;
+    background: white;
+    border-radius: 28px; /* Adjusted for rounded corners */
+    border: 1px solid #A8A3A3;
+    z-index: 1;
+}
+
+.input-label {
+    position: absolute;
+    top: -10px; /* Adjusted to move label up */
+    left: 20px; /* Consistent padding */
+    background: white; /* Match background */
+    padding: 0 5px; /* Padding to ensure background covers border */
+    color: #A8A3A3;
+    font-size: 18px; /* Adjusted font size for label */
+    z-index: 2;
+}
+
+.input-placeholder {
+    width: calc(100% - 40px); /* Adjusted width for padding */
+    height: 56px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 20px; /* Consistent padding */
+    font-size: 18px;
+    color: #5242D8; /* Adjusted text color */
+    background: none;
+}
+
+.visibility-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.signup-button, .signin-button {
+    width: 90%;
+    height: 56px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button-background {
+    width: 100%;
+    height: 100%;
+    background: #5242D8;
+    border-radius: 28px;
+    z-index: 1;
+}
+
+.button-text {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+}
+
+.alternative-signin, .alternative-signup {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alternative-text {
+    color: #A8A3A3;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.line {
+    height: 1px;
+    background: #A8A3A3;
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px;
+}
+
+.signup-link, .signin-link {
+    color: #5242D8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.google-icon-container {
+    margin-top: 20px;
+}
+
+.icon-background {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background: white;
+    border-radius: 50%;
+}
+
+.google-icon {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Page Effect</title>
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+
+<div id="overlay">
+    <div class="overlay-content">
+        <h2>Sign Up</h2>
+        <p>Join us today to stay updated!</p>
+        <button onclick="closeOverlay()">Close</button>
+    </div>
+</div>
+
+<div class="main-content">
+    <h1>Welcome to Our Website</h1>
+    <p>This is the main content of the page.</p>
+    <button onclick="openOverlay()">Open Sign Up</button>
+</div>
+
+<script>
+    function openOverlay() {
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeOverlay() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

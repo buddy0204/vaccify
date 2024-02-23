@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaccify</title>
+    <link rel="stylesheet" type="text/css" href="contact_us.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-left">
+        <img class="top-left-image" src="logo_bg.png" alt="logo" />
+        <h2 class="logo_heading"><b>Vaccify</b></h2>
+      </div>
+      <div class="nav-right">
+        <a href="home.html" id="navHome">Home</a>
+        <a href="about_us.html" id="navAbout">About Us</a>
+        <a href="contact_us.html" id="navContactUs">Contact Us</a>
+        <div class="signin">
+          <img
+            class="language_icon"
+            src="language_icon.png"
+            alt="globe"
+            id="languageIcon"
+            onclick="changeLanguage();"
+          />
+          <div class="button-background"></div>
+          <a class="signin-button" href="signin.html" id="signInButton"
+            >Sign in</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+    <img class="mainimage" src="contact_us illus.png" alt="Vaaccify" />
+
+    <h1>Contact Us</h1>
+    <div class="user-input-section">
+      <img src="person_icon.png" alt="User Icon" class="user-icon" />
+      <input type="text" placeholder="Name" id="userName" />
+    </div>
+    <div class="email-input-section">
+      <img src="mail_icon.png" alt="Mail Icon" class="user-icon" />
+      <input type="text" placeholder="Email" id="email" />
+    </div>
+    <div class="message-input-section">
+      <textarea placeholder="Message" id="message" rows="1"></textarea>
+    </div>
+
+    <div class="submit-button-section">
+      <button type="submit" id="sendMessageButton">Send Message</button>
+    </div>
+
+    <script>
+      const textarea = document.getElementById("message");
+
+      textarea.addEventListener("input", autoResize, false);
+
+      function autoResize() {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+      }
+    </script>
+  </body>
+</html>
